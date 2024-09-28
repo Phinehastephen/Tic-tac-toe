@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <input id="player1-name" type="text" placeholder="Player 1 Name">
+        <input id="player2-name" type="text" placeholder="Player 2 Name">
+        <label for="game-mode">Game Mode:</label>
+        <select id="game-mode">
+            <option value="pvp">Player vs Player</option>
+            <!-- <option value="pvc">Player vs Computer</option> -->
+        </select>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="hard">Hard</option>
+            <option value="master">Master</option>
+        </select>
+        <button id="start-game">Start Game</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div class="game-board">
+            <div class="row">
+                <div class="cell" id="cell-0"></div>
+                <div class="cell" id="cell-1"></div>
+                <div class="cell" id="cell-2"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-3"></div>
+                <div class="cell" id="cell-4"></div>
+                <div class="cell" id="cell-5"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="cell-6"></div>
+                <div class="cell" id="cell-7"></div>
+                <div class="cell" id="cell-8"></div>
+            </div>
+        </div>
+        <p id="current-player">Current Player: Player 1</p>
+        <!-- <div class="scoreboard">
+            <p id="player-score">Player Score: 0</p>
+            <p id="computer-score">Computer Score: 0</p>
+            <p id="round-number">Round: 1/3</p>
+            <p id="winner"></p>
+        </div> -->
+        <a href="index.html"><button id="reset-game" name="reset-game">Reset Game</button></a>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
